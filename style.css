@@ -32,7 +32,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -51,6 +51,8 @@ main img {
   flex: 2;
 }
 
+
+
 /* -------  Navigation ------- */
 
 header {
@@ -63,6 +65,17 @@ header {
   font-family: "Tangerine", cursive;
   font-size: 72px;
   color: #ecdbc9;
+}
+
+header nav {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center; 
+}
+
+header nav ul {
+  display: flex;
+  /* flex-direction: row; */
 }
 
 header nav ul li {
@@ -80,20 +93,27 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+/* header nav ul li:last-child a {
+  padding-right: 0;
+} */
+
 /* -------  Join Form ------- */
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
 }
 
-form label {
+form label {  
   font-weight: bold;
+  align-self: flex-start;
+  margin-right: 2px;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 170px;
+  align-self: flex-end;
 }
 
 form button {
@@ -103,6 +123,11 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+}
+
+.form-group, .blog-group {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* -------  Footer ------- */
@@ -118,3 +143,27 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+  }
+
+  header nav ul {
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 42px;
+    margin: 14px 0 14px 20px;
+  }
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
