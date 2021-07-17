@@ -11,3 +11,11 @@ Use knowledge of mobile first design, media queries, and CSS flexbox to implemen
 
 - CSS
 - HTML
+
+## Project Preview
+![Desktop Main](preview-images/desktop-main.png)
+![Mobile Main](preview-images/mobile-main.png)
+![Desktop About](preview-images/desktop-about.png)
+![Mobile About](preview-images/mobile-about.png)
+![Desktop Blog](preview-images/desktop-blog.png)
+![Mobile Blog](preview-images/mobile-blog.png)
